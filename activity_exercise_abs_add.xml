@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise_Abs_Add"
+    android:background="#000000">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:navigationIcon="@drawable/outline_arrow_back_24"
+        app:navigationIconTint="#00BFA5"
+        app:title="ABS"
+        app:titleCentered="true"
+        app:titleTextColor="#00BFA5"
+        app:titleTextAppearance="@style/ToolbarTitleText"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/AbcoasterCrunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abcoaster_crunch" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Abcoaster crunch"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddAbcoaster"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/AddominalCrunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/addominal_crunch" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Addominal crunch"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddAddominal"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/LegRaiseAbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leg_press_abs" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Leg raise chair"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAddLegRaiseAbs"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CrunchesTwist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/crunches_twist" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Crunches twist"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddCrunchesTwist"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DeclineCrunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/decline_crunch" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Decline crunch"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddDeclineCrunch"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/FloorCrunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/floor_crunch" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Floor crunch"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddFloorCrunch"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/LegRaise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/leg_raise" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Leg raise"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddLegRaise"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Plank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/plank" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Plank"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddPlank"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/SeatedCrunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/card_border"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="#000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/seated_crunch" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seated crunch"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnAddSeatedCrunch"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:text="ADD"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#1C1C1E"
+                        android:textColor="#00BFA5"
+                        app:strokeColor="#00BFA5"
+                        app:strokeWidth="1.5dp"
+                        app:cornerRadius="10dp"
+                        android:padding="0dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:itemActiveIndicatorStyle="@null"
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="#00BFA5"
+        app:itemTextColor="#00BFA5"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
